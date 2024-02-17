@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>welcome to a cakes!</h1>
+    <% if (cakesArr.length>0){%>
+        <% cakesArr.forEach(cake=>{ %>
+            <h1 class="name">name: 
+                <%= cake.name %>
+            </h1>
+            <h3 class="id">id: 
+                <%= cake.id %>
+            </h3>
+            <p class="recipe"><strong>recipe: </strong> 
+                <%= cake.recipe %>
+            </p>
+            <% }) %>
+                <% } %>
+</body>
+
+</html>

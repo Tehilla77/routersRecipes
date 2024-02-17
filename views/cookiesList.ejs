@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to a cookies!</h1>
+    <% if (cookiesArr.length>0){%>
+        <% cookiesArr.forEach(cookie=>{ %>
+            <h1 class="name">name: 
+                <%= cookie.name %>
+            </h1>
+            <h3 class="id">id: 
+                <%= cookie.id %>
+            </h3>
+            <p class="recipe"><strong>recipe: </strong> 
+                <%= cookie.recipe %>
+            </p>
+            <% }) %>
+                <% } %>
+</body>
+</html>
